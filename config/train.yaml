@@ -1,0 +1,36 @@
+defaults:
+    - agent: sac
+
+#env
+env: dog_stand
+
+# Basic setup
+experiment: sac
+device: cuda
+seed: 1
+
+# training 
+num_train_steps: 1e6
+replay_buffer_capacity: ${num_train_steps}
+num_seed_steps: 5000
+eval_frequency: 10000
+num_eval_episodes: 10
+
+# unsupervise
+num_unsup_steps: 0
+topK: 5
+reset_update: 100
+
+# logger
+log_frequency: 10000
+log_save_tb: true
+
+# video recorder
+save_video: false
+save_model: true
+
+# hydra configuration
+hydra:
+    name: ${env}
+    run:
+        dir: ./exp/${env}/H${diag_gaussian_actor.params.hidden_dim}_L${diag_gaussian_actor.params.hidden_depth}_B${agent.params.batch_size}_tau${agent.params.critic_tau}/${agent.name}_unsup${num_unsup_steps}_topk${topK}_${experiment}_lr${agent.params.actor_lr}_temp${agent.params.init_temperature}_seed${seed}

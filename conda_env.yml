@@ -1,0 +1,36 @@
+name: rlvlmf
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - absl-py
+  - pyparsing
+  - pip
+  - pip:
+    - termcolor
+    - tb-nightly
+    - imageio
+    - imageio-ffmpeg
+    - git+https://github.com/facebookresearch/hydra@0.11_branch
+    - matplotlib
+    - scikit-image
+    - tqdm
+    - moviepy
+    - shapely
+    - gym==0.25.2
+    - ftfy 
+    - regex 
+    - git+https://github.com/openai/CLIP.git
+    - salesforce-lavis
+    - openai==1.3.5
+    - google-generativeai
+    - pyquaternion
+    - pygame
+    - glfw==1.11.2
+    - gymnasium==0.29.1
+    - pandas==2.1.4
+    - pyopengl==3.1.7
+    - mujoco==3.1.1
+    - pybind11==2.10.4
+    - pybind11-global==2.10.4
+    - cmake==3.26.4
