@@ -46,7 +46,7 @@ If you find this codebase / paper useful in your research, please consider citin
 @InProceedings{wang2024,
   title = 	 {RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback},
   author =       {Wang, Yufei and Sun, Zhanyi and Zhang, Jesse and Xian, Zhou and Biyik, Erdem and Held, David and Erickson, Zackory},
-  booktitle = 	 {Proceedings of the 41th International Conference on Machine Learning},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
   year = 	 {2024}
 }
 ```
